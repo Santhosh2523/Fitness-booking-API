@@ -1,0 +1,82 @@
+{
+  "info": {
+    "name": "Fitness Booking API",
+    "_postman_id": "abcd1234-5678-90ef-ghij-klmnopqrstuv",
+    "description": "Postman collection for testing the Fitness Booking API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /classes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/classes/",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "classes",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /book",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"class_id\": 1,\n  \"client_name\": \"Alice\",\n  \"client_email\": \"alice@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/book/",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "book",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /bookings?email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bookings/?email=alice@example.com",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "bookings",
+            ""
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "alice@example.com"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
