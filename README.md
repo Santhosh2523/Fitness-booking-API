@@ -79,12 +79,38 @@ curl http://127.0.0.1:8000/bookings/?email=alice@example.com
   
   Timezone management from IST
 
-🧪 Testing
-You can test the API using:
+📥 Postman Collection
 
-✅ Postman Collection (import in Postman)
+1. Download the file
 
-curl commands above
+➡️ Click to download FitnessBookingAPI.postman_collection.json
+
+2. Import into Postman
+   
+Open Postman
+
+Click Import (top left)
+
+Choose File
+
+Select the downloaded file
+
+Click Import
+
+3. Test Your API
+   
+You will see a collection with 3 pre-made requests:
+
+✅ GET /classes
+
+✅ POST /book
+
+✅ GET /bookings?email=...
+
+Just click Send to test your API running on http://127.0.0.1:8000.
+
+✅ Author
+Created by Santhosh Suresh.
 
 
 
