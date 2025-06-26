@@ -63,6 +63,13 @@ curl http://127.0.0.1:8000/bookings/?email=alice@example.com
   Validates missing fields
   Timezone management from IST
 
+🧪 Testing
+You can test the API using:
+
+✅ Postman Collection (import in Postman)
+
+curl commands above
+
 
 
 
